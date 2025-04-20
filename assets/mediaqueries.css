@@ -1,0 +1,151 @@
+/*ipad Air*/
+@media (max-width:1050px) {
+    
+    .main-links .link p{
+        font-size: 9pt;
+    }
+
+    .photo img {
+        max-width: 50px;
+    }
+    
+    footer p {
+        font-size: 7pt;
+    }
+
+    .navfot {
+        font-size: 9pt;
+    }
+}
+/*fim ipad Air*/
+
+/*Galaxy tab S7*/
+
+@media (max-width:800px) {
+    .main-links {
+
+        flex-wrap: wrap;
+    }
+
+    .navfot {
+        margin-left: 1em;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .about-div p {
+        margin-bottom: 2em;
+    }
+}
+
+/*Fim Galaxy tab S7*/
+
+/*iPhone 12 pro*/
+
+@media (max-width:450px) {
+    
+    
+    .burger {
+        display: block;
+        z-index: 1;
+    }
+    
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background:#E0DEDC;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3em;
+        clip-path: circle(100px at -90% -15%);
+        pointer-events: none;
+    }
+
+    .nav.is-active .navbar {
+        clip-path: circle(1500px at 90% 15%);
+        pointer-events: all;
+        font-size: 17pt;
+    }
+
+    .nav.is-active .burger {
+        border-top: transparent;
+        transition: ease-in-out 1s;
+        top: 39px;
+        right: 87px;
+    }
+
+    .nav.is-active .burger::before {
+        transform: rotate(-135deg);
+        transition: ease-in-out 0.5s;
+    }
+    .nav.is-active .burger::after {
+        transform: rotate(135deg);
+        top: -8px;
+        transition: ease-in-out 0.5s;
+    }
+
+
+    main {
+        padding: 1.5em;
+        margin-top: 4em;
+    }
+
+
+   
+
+    
+    .main-photo h1 {
+        text-align: center;
+        font-size:30pt;
+    }
+    .main-links {
+       font-size: 7pt;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .about-div {
+        max-width: 450px;
+    }
+
+    .about-div p {
+        margin-bottom: 1.4em;  
+     
+    }
+
+    .class iframe {
+        max-width: 350px;
+        max-height: 190px;
+        border-radius: 1em;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    footer p {
+        margin-bottom: 2em;
+    }
+}
+
+/*Fim iPhone 12 pro*/
+
+/*Galaxy S10*/
+
+@media (max-width:412px) {
+    .navfot {
+        font-size: 8pt;
+    }
+}
+
+/*Fim Galaxy S10*/

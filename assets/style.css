@@ -17,17 +17,17 @@
 }
 
 header {
-    width: 1240px;
+   width: 100vw;
+    height: 50px;
     padding: 0.8em;
-    justify-content: space-between;
     background-color: var(--color1);
     position: fixed;
     border-bottom: 1px solid var(--color2);
 }
 
 .img img {
-    max-width: 4em;
-    border-radius: 1.4em;
+    max-width: 3em;
+    border-radius: 0.7em;
     border: 1.2px solid black;
     cursor: pointer;
 }
@@ -41,8 +41,25 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-around;
+}
+
+.burger {
+    border: none;
+    background: none;
+    border-top: 2px solid black;
+    cursor: pointer;
+    display: none;
+}
+
+.burger::before,.burger::after {
+    content: "";
+    display: block;
+    margin-top: 0.3em;
+    background: black;
+    width: 30px;
+    height: 2px;
+    position: relative;
 }
 
 .navbar {
@@ -126,8 +143,7 @@ main {
 }
 
 .about-div h2 {
-    margin-bottom: 1.4em;
-    
+    margin-bottom: 1.4em;   
 }
 
 
@@ -161,4 +177,48 @@ main {
     display: flex;
     gap: 0.8em;
 }
+
+.episodes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 4em;
+}
+
+.class iframe {
+    max-width: 450px;
+    max-height: 250px;
+    border-radius: 1em;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--color2);
+}
+
+footer p {
+    font-size: 10pt;
+}
+
+.navfot {
+    display: flex;
+    gap: 1.5em;
+    font-size: 10pt;
+}
+
+.navfot a {
+    color: black;
+}
+.navfot a:hover {
+    transform:scale(1.1);
+    opacity: 0.7;
+}
+
+
 
